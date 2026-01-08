@@ -7,4 +7,7 @@ class StudentManager:
         self.cgpa = 0.0
 
     def compute_CGPA(self, unit, score):
-        return score/unit
+        self.cgpa = score / unit
+    
+    def get_cgpa(self):
+        return self.cgpa
